@@ -1,0 +1,2 @@
+symfony_mailer.mailer_transport.*
+symfony_mailer.settings.yml

@@ -1,0 +1,4 @@
+/.github
+/conf
+Dockerfile
+.dockerignore

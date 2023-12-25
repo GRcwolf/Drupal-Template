@@ -1,0 +1,22 @@
+/core
+/*/contrib
+/.csslintrc
+/.eslintignore
+/.eslintrc.json
+/.ht.router.php
+/.htaccess
+/autoload.php
+/example.gitignore
+/index.php
+/INSTALL.txt
+/README.md
+/robots.txt
+/update.php
+/web.config
+
+# Sites
+/sites/development.services.yml
+example.*
+default.*
+settings.local.php
+/sites/default/files

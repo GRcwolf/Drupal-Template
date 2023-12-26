@@ -34,10 +34,12 @@
         "drupal/pathauto": "^1.11",
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/redirect": "^1.8",
-        "drupal/role_delegation": "^1.2",
         "drupal/simple_sitemap": "^4.1",
         "drupal/symfony_mailer": "^1.4",
         "drush/drush": "^12.4"
+    },
+    "require-dev": {
+        "drupal/coder": "8.3.13"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -53,6 +55,9 @@
             "cweagans/composer-patches": true
         },
         "sort-packages": true
+    },
+    "scripts": {
+        "lint": "phpcs -p"
     },
     "extra": {
         "patches": {

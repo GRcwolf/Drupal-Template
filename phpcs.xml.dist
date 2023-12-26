@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="drupal">
+  <description>PHP CodeSniffer configuration for drupal development.</description>
+  <!-- Check all files in the current directory and below. -->
+  <file>web/themes/custom</file>
+  <file>web/modules/custom</file>
+
+  <exclude-pattern>web/themes/custom/*/assets</exclude-pattern>
+  <exclude-pattern>*node_modules*</exclude-pattern>
+
+  <arg name="extensions" value="php,module,inc,install,test,profile,theme,css,info,txt,md,yml"/>
+  <config name="drupal_core_version" value="10"/>
+
+  <!-- If you have Coder installed locally then you can reference the Drupal
+  standards with relative paths. Otherwise simply use "Drupal" and
+  "DrupalPractice. -->
+  <rule ref="./vendor/drupal/coder/coder_sniffer/Drupal">
+    <!-- Example how you would disable a rule you are not compliant with yet:
+    <exclude name="Drupal.Commenting.Deprecated"/>
+    -->
+  </rule>
+  <rule ref="./vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
+
+  <!-- Example how you would disable an external rule you do not like:
+  <rule ref="PEAR.Functions.ValidDefaultValue.NotAtEnd">
+    <severity>0</severity>
+  </rule>
+  -->
+</ruleset>

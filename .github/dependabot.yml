@@ -6,18 +6,4 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
-    allow:
-      - dependency-type: "all"
-    reviewers:
-      - "GRcwolf"
-    groups:
-      drupal-packages:
-        patterns:
-          - "drupal/*"
-          - "drush/drush"
-      other-packages:
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "drupal/*"
-          - "drush/drush"
+    open-pull-requests-limit: 0

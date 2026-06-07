@@ -1,3 +1,4 @@
 vendor
 README.txt
 .idea
+composer.lock
